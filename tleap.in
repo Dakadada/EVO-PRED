@@ -1,0 +1,12 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+loadamberparams ligand_gaff.frcmod
+LIG = loadmol2 ligand_gaff.mol2
+PROT = loadpdb 6F86_heavy.pdb
+COMPLEX = combine {PROT LIG}
+solvatebox COMPLEX TIP3PBOX 10.0
+addions COMPLEX Na+ 0
+addions COMPLEX Cl- 0
+saveamberparm COMPLEX holo_complex.prmtop holo_complex.inpcrd
+quit

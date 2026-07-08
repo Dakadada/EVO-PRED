@@ -1,0 +1,131 @@
+====================================================================================
+-------------------------------ring property (I)------------------------------------
+
+====================================================================================
+-------------------------------ring property (II)------------------------------------
+
+====================================================================================
+-------------------------------ring property (III)-----------------------------------
+atom[ 1] (CAW ) is not in any ring (nr[1]=1)
+atom[ 2] (CAV ) is not in any ring (nr[2]=1)
+atom[ 3] (Br  ) is not in any ring (nr[3]=1)
+atom[ 4] (CAU ) is not in any ring (nr[4]=1)
+atom[ 5] (NAT ) is not in any ring (nr[5]=1)
+atom[ 6] (NAS ) is not in any ring (nr[6]=1)
+atom[ 7] (CAR ) is not in any ring (nr[7]=1)
+atom[ 8] (CAQ ) is not in any ring (nr[8]=1)
+atom[ 9] (CAP ) is not in any ring (nr[9]=1)
+atom[10] (NAY ) is not in any ring (nr[10]=1)
+atom[11] (CAZ ) is not in any ring (nr[11]=1)
+atom[12] (OBB ) is not in any ring (nr[12]=1)
+atom[13] (NBA ) is not in any ring (nr[13]=1)
+atom[14] (CBC ) is not in any ring (nr[14]=1)
+atom[15] (CBD ) is not in any ring (nr[15]=1)
+atom[16] (NAO ) is not in any ring (nr[16]=1)
+atom[17] (CAN ) is not in any ring (nr[17]=1)
+atom[18] (CAM ) is not in any ring (nr[18]=1)
+atom[19] (CAK ) is not in any ring (nr[19]=1)
+atom[20] (OAL ) is not in any ring (nr[20]=1)
+atom[21] (NAH ) is not in any ring (nr[21]=1)
+atom[22] (CAE ) is not in any ring (nr[22]=1)
+atom[23] (CAF ) is not in any ring (nr[23]=1)
+atom[24] (CAA ) is not in any ring (nr[24]=1)
+atom[25] (CAB ) is not in any ring (nr[25]=1)
+atom[26] (NAC ) is not in any ring (nr[26]=1)
+atom[27] (CAD ) is not in any ring (nr[27]=1)
+
+====================================================================================
+-------------------------------aromatic property------------------------------------
+
+====================================================================================
+-------------------------------electronic property----------------------------------
+atom [ 1] (CAW ) is not an electron-withdrew atom
+atom [ 2] (CAV ) is not an electron-withdrew atom
+atom [ 3] (Br  ) is an electron-withdrew atom
+atom [ 4] (CAU ) is not an electron-withdrew atom
+atom [ 5] (NAT ) is an electron-withdrew atom
+atom [ 6] (NAS ) is an electron-withdrew atom
+atom [ 7] (CAR ) is not an electron-withdrew atom
+atom [ 8] (CAQ ) is not an electron-withdrew atom
+atom [ 9] (CAP ) is not an electron-withdrew atom
+atom [10] (NAY ) is an electron-withdrew atom
+atom [11] (CAZ ) is not an electron-withdrew atom
+atom [12] (OBB ) is an electron-withdrew atom
+atom [13] (NBA ) is an electron-withdrew atom
+atom [14] (CBC ) is not an electron-withdrew atom
+atom [15] (CBD ) is not an electron-withdrew atom
+atom [16] (NAO ) is an electron-withdrew atom
+atom [17] (CAN ) is not an electron-withdrew atom
+atom [18] (CAM ) is not an electron-withdrew atom
+atom [19] (CAK ) is not an electron-withdrew atom
+atom [20] (OAL ) is an electron-withdrew atom
+atom [21] (NAH ) is an electron-withdrew atom
+atom [22] (CAE ) is not an electron-withdrew atom
+atom [23] (CAF ) is not an electron-withdrew atom
+atom [24] (CAA ) is not an electron-withdrew atom
+atom [25] (CAB ) is not an electron-withdrew atom
+atom [26] (NAC ) is an electron-withdrew atom
+atom [27] (CAD ) is not an electron-withdrew atom
+
+====================================================================================
+--------------------------------connectivity property-------------------------------
+atom[ 1] (CAW )     2   CAV
+atom[ 1] (CAW )     6   NAS
+atom[ 2] (CAV )     1   CAW
+atom[ 2] (CAV )     3    Br
+atom[ 2] (CAV )     4   CAU
+atom[ 3] (Br  )     2   CAV
+atom[ 4] (CAU )     2   CAV
+atom[ 4] (CAU )     5   NAT
+atom[ 5] (NAT )     4   CAU
+atom[ 5] (NAT )     6   NAS
+atom[ 6] (NAS )     1   CAW
+atom[ 6] (NAS )     5   NAT
+atom[ 6] (NAS )     7   CAR
+atom[ 7] (CAR )     6   NAS
+atom[ 7] (CAR )     8   CAQ
+atom[ 7] (CAR )    18   CAM
+atom[ 8] (CAQ )     7   CAR
+atom[ 8] (CAQ )     9   CAP
+atom[ 9] (CAP )     8   CAQ
+atom[ 9] (CAP )    10   NAY
+atom[ 9] (CAP )    16   NAO
+atom[10] (NAY )     9   CAP
+atom[10] (NAY )    11   CAZ
+atom[11] (CAZ )    10   NAY
+atom[11] (CAZ )    12   OBB
+atom[11] (CAZ )    13   NBA
+atom[12] (OBB )    11   CAZ
+atom[13] (NBA )    11   CAZ
+atom[13] (NBA )    14   CBC
+atom[14] (CBC )    13   NBA
+atom[14] (CBC )    15   CBD
+atom[15] (CBD )    14   CBC
+atom[16] (NAO )     9   CAP
+atom[16] (NAO )    17   CAN
+atom[17] (CAN )    16   NAO
+atom[17] (CAN )    18   CAM
+atom[18] (CAM )     7   CAR
+atom[18] (CAM )    17   CAN
+atom[18] (CAM )    19   CAK
+atom[19] (CAK )    18   CAM
+atom[19] (CAK )    20   OAL
+atom[19] (CAK )    21   NAH
+atom[20] (OAL )    19   CAK
+atom[21] (NAH )    19   CAK
+atom[21] (NAH )    22   CAE
+atom[22] (CAE )    21   NAH
+atom[22] (CAE )    23   CAF
+atom[22] (CAE )    27   CAD
+atom[23] (CAF )    22   CAE
+atom[23] (CAF )    24   CAA
+atom[24] (CAA )    23   CAF
+atom[24] (CAA )    25   CAB
+atom[25] (CAB )    24   CAA
+atom[25] (CAB )    26   NAC
+atom[26] (NAC )    25   CAB
+atom[26] (NAC )    27   CAD
+atom[27] (CAD )    22   CAE
+atom[27] (CAD )    26   NAC
+----------------------------------------END-----------------------------------------
+
