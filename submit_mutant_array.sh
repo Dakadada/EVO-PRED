@@ -1,6 +1,3 @@
-
-```bash
-#submit_mutant_array.sh
 #!/bin/bash
 #SBATCH --job-name=kivi_mutants
 #SBATCH --output=array_%A_%a.out
@@ -11,18 +8,15 @@
 #SBATCH --time=06:00:00
 #SBATCH --mem=8G
 
-# Load required cluster environments
 module load miniforge
 source activate evopred
 module load cuda/11.8
 
-# Map the array task index to our mutant target array
-MUTANTS=("K89S" "K89D" "H85G" "F90E" "K89Y")
-MUTANT=${MUTANTS}
+MUTANTS=("K89S" "K89N" "K89D" "K89Y" "K89E")
+MUTANT=${MUTANTS[$((SLURM_ARRAY_TASK_ID-1))]}
 
 echo "Starting pipeline for mutant: ${MUTANT} on host $(hostname) with GPU allocation."
 
-# 1. Build Amber topology for this specific mutant in a local temporary file
 cat << EOF > tleap_${MUTANT}.in
 source leaprc.protein.ff14SB
 source leaprc.gaff2
@@ -39,9 +33,6 @@ quit
 EOF
 
 tleap -f tleap_${MUTANT}.in
-
-# Clean up input build file
 rm tleap_${MUTANT}.in
 
-# 2. Run the production OpenMM molecular dynamics simulation on GPU
 python run_md_mutant.py ${MUTANT}_complex.prmtop ${MUTANT}_complex.inpcrd ${MUTANT}_trajectory.xtc

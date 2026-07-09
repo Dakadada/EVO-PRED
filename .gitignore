@@ -1,0 +1,7 @@
+*.err
+*.out
+*.xtc
+*.inpcrd
+*.prmtop
+*_heavy.pdb
+leap.log
